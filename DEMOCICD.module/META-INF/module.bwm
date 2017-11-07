@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_2d0vIMN5Eeeij-HFbW7d-A" targetNamespace="http://tns.tibco.com/bw/composite/DEMOCICD.module" name="DEMOCICD.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="__TOpkMN5Eeeij-HFbW7d-A" name="gethost" promote="ComponentProcess/gethost">
+    <sca:interface.wsdl xmi:id="__Tw1EMN5Eeeij-HFbW7d-A" interface="http://xmlns.example.com/20171107103943PLT#wsdl.interface(gethost)" scaext:wsdlLocation="../Processes/democicd/module/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="__UP9QMN5Eeeij-HFbW7d-A" name="RestService" path="/gethost" docBasePath="http://localhost:7777/DEMOCICD.module" docResourcePath="gethost" basePath="/" connector="democicd.module.gethost" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/democicd.module.Process-gethost.json">
+      <operation xmi:id="__Uf04MN5Eeeij-HFbW7d-A" operationName="get" nickname="get-gethost" httpMethod="GET" responseStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="__YxQ4MN5Eeeij-HFbW7d-A"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="__Ugb8MN5Eeeij-HFbW7d-A" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_46FWMMN5Eeeij-HFbW7d-A" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_474F8MN5Eeeij-HFbW7d-A" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_48w2wMN5Eeeij-HFbW7d-A" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_49daUMN5Eeeij-HFbW7d-A" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_4-JW0MN5Eeeij-HFbW7d-A" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_4-lbsMN5Eeeij-HFbW7d-A" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_4_kTIMN5Eeeij-HFbW7d-A" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_33nzoMN5Eeeij-HFbW7d-A" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_33po0MN5Eeeij-HFbW7d-A" processName="democicd.module.Process"/>
+    <sca:service xmi:id="__StFIMN5Eeeij-HFbW7d-A" name="gethost">
+      <sca:interface.wsdl xmi:id="__S4EQMN5Eeeij-HFbW7d-A" interface="http://xmlns.example.com/20171107103943PLT#wsdl.interface(gethost)" scaext:wsdlLocation="../Processes/democicd/module/Process.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
