@@ -41,7 +41,7 @@
 							<!--Specifies the folder to store reports in. -->
 							<outputFolder>${basedir}/target/surefire-reports</outputFolder>
 
-							<projectFile>REST-Project-6-soapui-project.xml</projectFile>
+							<projectFile>TEST/REST-Project-6-soapui-project.xml</projectFile>
 							<projectProperties>
 								<value>message=Hello World!</value>
 							</projectProperties>
