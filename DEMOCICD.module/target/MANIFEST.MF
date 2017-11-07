@@ -11,7 +11,7 @@ TIBCO-BWCE-Edition-Target: cf
 TIBCO-BW-ConfigProfile: META-INF/default.substvar
 TIBCO-BW-Version: 2.2.0 V26 2016-11-16
 Bundle-Name: DEMOCICD Module
-Bundle-Version: 1.0.0.201711071051
+Bundle-Version: 1.0.0.201711071101
 Bundle-ClassPath: .
 TIBCO-BW-ApplicationModule: META-INF/module.bwm
 TIBCO-BW-JobSharedVariables: META-INF/module.jsv
