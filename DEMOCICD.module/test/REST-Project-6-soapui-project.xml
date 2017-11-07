@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="62bcf69f-1a87-4cdd-9695-99c60b881c52" activeEnvironment="Default" name="REST Project 6" resourceRoot="" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="http://localhost:18080 TestSuite"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export JUnit Results with test properties" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="Gethost TestCase"/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value="D:\CICD\TEST\target"/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="ded9bab1-ad6e-4343-b555-056110cf3a42" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:18080" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://localhost:18080</con:endpoint></con:endpoints><con:resource name="Gethost" path="/gethost" id="2b558352-4a6a-4dae-a75c-cdc03b13d101"><con:settings/><con:parameters/><con:method name="Gethost" id="ee7773a7-0a18-4128-a519-bd34e232fa96" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>text/plain;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="71f58802-c0e9-4c94-88eb-f3f7840213d0" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:18080</con:endpoint><con:request/><con:originalUri>http://localhost/gethost</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="e3211245-4a5f-4a23-b2a5-69f9c4315ba6" name="http://localhost:18080 TestSuite"><con:description>TestSuite generated for REST Service [http://localhost:18080]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="4aabeeca-e643-450d-8a32-4dabb9d41ea8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Gethost TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [Gethost] located at [/gethost]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="492cc8f9-e076-43cc-9a6d-7f7cfa53bd92"><con:settings/><con:config service="http://localhost:18080" resourcePath="/gethost" methodName="Gethost" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="71f58802-c0e9-4c94-88eb-f3f7840213d0" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:18080</con:endpoint><con:request/><con:originalUri>http://localhost/gethost</con:originalUri><con:assertion type="Simple Contains" id="541bc8dd-dc89-484c-804d-749be0ba6f15" name="Contains"><con:configuration><token>Host is </token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
