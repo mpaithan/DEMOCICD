@@ -26,7 +26,7 @@
 							<goal>test</goal>
 						</goals>
 						<configuration>
-							<settingsFile>./soapui-settings.xml</settingsFile>
+							<settingsFile>soapui-settings.xml</settingsFile>
 							<!--Required for reports. Specifies the format of the report to generate.-->
 							<!--Possible values: PDF, XLS, HTML, RTF, CSV, TXT and XML. Only available in Ready! API Pro. -->    
 							<reportFormat>PDF</reportFormat>
